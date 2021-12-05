@@ -30,4 +30,7 @@ const sendSMSMessage = (options) => {
     }))
 }
 
+// TODO: Multiple numbers
+// Other features on teh document
+
 module.exports.sendSMSMessage = sendSMSMessage
