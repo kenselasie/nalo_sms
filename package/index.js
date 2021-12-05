@@ -7,14 +7,15 @@ let url = ''
 
 const sendSMSMessage = (options) => {
     const requiredFields = ['username', 'password', 'type', 'dlr', 'destination', 'sender', 'message']
-    console.log(options.password)
     const missingFields = requiredFields.filter(field => {
-        if (!options[field] && options[field] != 0) return field
+        if (options[field] === null || options[field] === undefined || options[field] === '') return field
     })
+    
+    if (missingFields.length > 0) return console.error(`Error: ${missingFields} field(s) missing`)
 
-    console.log(missingFields)
-
-    const otherParams = `?username=${options.username}&password=${options.password}&type=${options.type}&dlr=${options.dlr}&destination=${options.destination}&source=${options.sender}&message=${options.message}`
+    const otherParams = 
+    `?username=${options.username}&password=${options.password}&type=${options.type}&dlr=${options.dlr}&destination=${options.destination}&source=${options.sender}&message=${options.message}`
+    
     options.secured ? url = securedBaseUrl : url = baseUrl
 
     http.get(`${url}${otherParams}`, (res => {
