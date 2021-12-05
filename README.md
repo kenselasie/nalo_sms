@@ -8,7 +8,7 @@ Simple sms api for your messaging
 
 To get started,
 1. Visit https://sms.nalosolutions.com
-2. Click on the n
+2. Click on the new account, fill out the forms and click on register and your account will be activated.
 
 
 # Installation
