@@ -1,0 +1,25 @@
+{
+  "name": "nalo_sms",
+  "version": "1.0.0",
+  "description": "Simple sms api for your messaging",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenselasie/nalo_sms.git"
+  },
+  "keywords": [
+    "nalosms"
+  ],
+  "author": "kenselasie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kenselasie/nalo_sms/issues"
+  },
+  "homepage": "https://github.com/kenselasie/nalo_sms#readme"
+}
